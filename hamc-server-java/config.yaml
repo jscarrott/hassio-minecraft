@@ -34,6 +34,8 @@ options:
   ENABLE_COMMAND_BLOCK: false
   FORCE_GAMEMODE: false
   MAX_BUILD_HEIGHT: 256
+  TYPE: "FABRIC"
+  MODRINTH_PROJECTS: "fabulously-optimized"
 schema:
   VERSION: str
   SERVER_NAME: str
@@ -57,6 +59,8 @@ schema:
   ENABLE_COMMAND_BLOCK: bool
   FORCE_GAMEMODE: bool
   MAX_BUILD_HEIGHT: int
+  TYPE: str
+  MODRINTH_PROJECTS: str
 map:
   - addons:rw
 environment:
