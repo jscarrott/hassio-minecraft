@@ -1,6 +1,6 @@
 name: HAMC Server Java
-description: Host a Java Minecraft server on Home Assistant
-version: 1.0.0
+description: Host a Java Minecraft server on Home Assistant modded
+version: 1.0.3
 slug: hamc-java
 init: false
 arch:
@@ -35,7 +35,8 @@ options:
   FORCE_GAMEMODE: false
   MAX_BUILD_HEIGHT: 256
   TYPE: "FABRIC"
-  MODRINTH_PROJECTS: "fabulously-optimized"
+  MODRINTH_MODPACK: "fabulously-optimized"
+  MODRINTH_PROJECT: ""
 schema:
   VERSION: str
   SERVER_NAME: str
@@ -60,7 +61,8 @@ schema:
   FORCE_GAMEMODE: bool
   MAX_BUILD_HEIGHT: int
   TYPE: str
-  MODRINTH_PROJECTS: str
+  MODRINTH_PROJECTS: "str?"
+  MODRINTH_MODPACK: str
 map:
   - addons:rw
 environment:
